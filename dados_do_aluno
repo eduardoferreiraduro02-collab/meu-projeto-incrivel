@@ -1,0 +1,18 @@
+// aluno.model.ts
+
+export interface Aluno {
+    id: string;
+    nome: string;
+    email: string;
+    
+    // Dados Específicos do Contexto
+    metaCurso: 'Medicina' | 'Direito' | 'Engenharia' | string;
+    universidadeAlvo: 'USP' | 'ENEM' | 'UNICAMP' | string;
+    anoEscolar: '3º Ano' | 'Cursinho' | 'Treineiro';
+
+    // Métricas de Retenção
+    totalRedacoesEnviadas: number;
+    dataUltimoEnvio: Date;
+    mediaNotaAtual: number;
+    statusEngajamento: 'Ativo' | 'Em Risco' | 'Inativo';
+}
